@@ -1,0 +1,246 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: hsl(217, 54%, 11%);
+}
+
+.container-tarjeta{
+    height: 450px;
+    width: 250px;
+    background: hsl(216, 50%, 16%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.cont-imagen{
+    width: 250px;
+    height: 300px;
+    overflow: hidden;
+    background: hsl(216, 50%, 16%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen1{
+    background: hsl(216, 50%, 16%);
+    width: 100%;
+    height: 88%;
+    display: flex;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+.hover-galeria img{
+    background-color: transparent;
+}
+
+.hover-galeria{
+    margin-top: 120px;
+    position: absolute;
+    width: 250px;
+    height: 265px;
+    overflow: hidden;
+    top: 0;
+    transform: scale(0);
+    background: rgba(21, 248, 218, 0.507);
+    transition: transform 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+.cont-imagen:hover .hover-galeria{
+    transform: scale(1);
+}
+
+
+.descripcion-tarjeta{
+    color: white;
+    align-items: center;
+}
+
+.contenido *{
+    text-align: start;
+    background-color: hsl(216, 50%, 16%);
+    letter-spacing: 1px;
+    background: hsl(216, 50%, 16%);
+}
+
+.contenido h1{
+    margin-top: 0px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+.contenido h1:hover{
+    color: rgb(21, 248, 218);
+}
+
+.contenido p{
+    color: rgb(150, 148, 148);
+    font-size: 12px;
+    font-weight: 400;
+    padding: 9px;
+    padding-left: 0;
+}
+
+
+.conteinerh2h3{
+    padding: 5px;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteinerh2h3 .h2-img img, h2{
+    display: inline-block;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+.conteinerh2h3 .h2-img h2{
+    margin: 5px;
+}
+
+.conteinerh2h3 .h3-img img, h3{
+    display: inline-block;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+.conteinerh2h3 .h3-img h3{
+    margin: 5px;
+}
+
+
+
+
+/* .conteinerh2h3 .h2-img .h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    
+}
+
+
+.conteinerh2h3 .h3-img .h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;  
+    
+
+}  */
+
+
+
+.contenido .h2-img{
+    color: rgb(21, 248, 218);
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.contenido .h3-img{
+    color: rgb(133, 133, 133);
+    padding: 5px;
+}
+
+
+.line{
+    width: 100%;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    height: 0.8px;
+    background: rgb(133, 133, 133);
+}
+
+.h4-img{
+    padding: 8px;
+    padding-left: 0;
+    font-size: 12px;
+    color: rgb(133, 133, 133);
+    display: flex;
+    align-items: center;
+}
+
+.h4-img h4{
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.h4-img span:hover{
+    color: rgb(21, 248, 218);
+}
+
+.h4-img img{
+    width: 15%;
+    align-items: initial;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    color: gray;
+}
+
+.name a{
+    text-decoration: none;
+    color: white;
+    background: none;
+}
+
+.name a:hover{
+    text-decoration: none;
+    color: black;
+    background: none;
+}
+
+
+
+@media only screen and (max-width:500px){
+
+    .contenido *{
+        font-size: 12px;
+    }
+
+
+    .conteinerh2h3{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+    .container-tarjeta{
+        height: 480px;
+        width: 250px;
+    }
+
+    .h4-img h4{
+        font-size: 10px;
+    }
+
+}
